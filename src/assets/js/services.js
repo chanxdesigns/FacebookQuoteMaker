@@ -1,6 +1,6 @@
-var TitleService = angular.module('TitleService',[]);
+var FBQM = angular.module('Services',[]);
 
-TitleService.service('ModifyTitle', function () {
+FBQM.service('ModifyTitle', function () {
     this.name = "Facebook Quote Maker";
     this.getName = function () {
         return this.name;
@@ -8,5 +8,6 @@ TitleService.service('ModifyTitle', function () {
 
     this.setName = function (title) {
         this.name = title;
+        console.log(this.name);
     };
 });
